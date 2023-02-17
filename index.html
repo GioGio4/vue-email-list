@@ -44,7 +44,7 @@
     <div id="root">
 
         <button @click="GenerateRandomListEmail()" type="button " class="btn-primary">Genera email</button>
-        <ol>
+        <ol v-if="completeList==10">
             <li v-for="email in randomEmailList">
                 {{email}}
             </li>

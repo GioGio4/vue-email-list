@@ -41,14 +41,20 @@
 </head>
 
 <body>
-    <div id="root">
+    <div id="root" class="bg-dark bg-gradient d-flex justify-content-center align-items-center">
 
-        <button @click="GenerateRandomListEmail()" type="button " class="btn-primary">Genera email</button>
-        <ol v-if="completeList==10">
-            <li v-for="email in randomEmailList">
-                {{email}}
-            </li>
-        </ol>
+        <div class="card-email bg-primary bg-gradient bg-opacity-70 text-center">
+            <h1>EMAIL GENERATOR</h1>
+            <button @click="GenerateRandomListEmail()" type="button " class="btn btn-success btn-lg">Generate</button>
+            <div class="list-email-generated my-3">
+
+                <ul v-if="completeList==10" class="list-group my-2">
+                    <li v-for="email in randomEmailList" class="list-group-item"> {{email}}</li>
+                </ul>
+            </div>
+
+        </div>
+
     </div>
 
 </body>

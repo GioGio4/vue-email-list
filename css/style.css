@@ -1,0 +1,17 @@
+#root {
+  height: 100vh;
+}
+
+.card-email {
+  width: 350px;
+  height: 600px;
+  border-radius: 10px;
+  filter: drop-shadow(12px 13px 23px black);
+}
+
+.list-email-generated {
+  background-color: white;
+  height: 420px;
+  border-top: 2px solid rgb(31 88 175);
+  border-bottom: 2px solid rgb(31 88 175);
+}
